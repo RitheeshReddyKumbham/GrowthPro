@@ -11,13 +11,13 @@ const App = () => {
     e.preventDefault();
     if (!name || !location) return alert("All fields required.");
     setLoading(true);
-    const res = await axios.post("http://localhost:3000/business-data", { name, location });
+    const res = await axios.post("https://growthpro-backend-6ri4.onrender.com/business-data", { name, location });
     setData(res.data);
     setLoading(false);
   };
 
   const regenerateHeadline = async () => {
-    const res = await axios.get(`http://localhost:3000/regenerate-headline?name=${name}&location=${location}`);
+    const res = await axios.get(`https://growthpro-backend-6ri4.onrender.com/regenerate-headline?name=${name}&location=${location}`);
     setData((prev) => ({ ...prev, headline: res.data.headline }));
   };
 
