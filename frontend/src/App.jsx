@@ -26,7 +26,7 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-100 flex items-center justify-center px-4">
       <div className="bg-white shadow-xl rounded-2xl px-8 py-10 w-full max-w-md space-y-6">
         <h1 className="text-2xl font-bold text-center text-gray-800 flex items-center justify-center gap-2">
-          <span role="img" aria-label="rocket">🚀</span> GrowthProAI Dashboard
+          GrowthProAI Dashboard
         </h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
